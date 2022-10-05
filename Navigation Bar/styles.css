@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+}
+
+nav {
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+img {
+    height: 25px;
+    width: 25px;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 5px;
+    list-style: none;
+}
+
+li a:hover {
+    background-color: rgba(104, 158, 219, 0.777);
+}
+
+//* Toggle Class*//
+.show-links {
+    height: 92px;
+}
+
+/* By Default Hide Links */
+.nav-links {
+    height: 0;
+    overflow: hidden;
+
+}
+
+
+@media screen and (min-width: 560px) {
+    .nav-parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    button {
+        height: 0;
+        width: 0;
+        overflow: hidden;
+    }
+
+
+    /* IMPORTANT TO ADD Heigth to auto when the screen is bigger than 560px */
+    .links {
+        height: auto;
+        display: flex;
+    }
+
+
+
+
+
+}
